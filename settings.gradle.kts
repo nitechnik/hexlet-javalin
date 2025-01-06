@@ -1,2 +1,1 @@
-rootProject.name = "HexletJavalin"
-
+rootProject.name = "hexlet-javalin"
