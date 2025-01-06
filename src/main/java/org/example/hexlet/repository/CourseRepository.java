@@ -19,10 +19,14 @@ public class CourseRepository {
     }
 
     public static List<Course> search(String term) {
-        return entities.stream().filter(entity -> entity.getName().startsWith(term)).toList();
+        return entities.stream()
+                .filter(entity -> entity.getName().startsWith(term))
+                .toList();
     }
 
     public static Optional<Course> find(Long id) {
-        return entities.stream().filter(entity -> entity.getId().equals(id)).findAny();
+        return entities.stream()
+                .filter(entity -> entity.getId().equals(id))
+                .findAny();
     }
 }
